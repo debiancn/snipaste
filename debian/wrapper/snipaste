@@ -1,0 +1,39 @@
+#!/bin/sh
+#
+# Snipaste Linux loader (Wine version)
+#
+# This script is released into public domain.
+#
+# Original author: Boyuan Yang <073plan@gmail.com>
+
+set -e
+
+_XDG_CONFIG_HOME_FALLBACK="${HOME}/.config"
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-${_XDG_CONFIG_HOME_FALLBACK}}
+SNIPASTE_CONFIG_DIR="${XDG_CONFIG_HOME}/snipaste"
+SNIPASTE_INSTALL_DIR="/opt/snipaste"
+
+if [ -f "${SNIPASTE_CONFIG_DIR}" ]; then
+    rm -rf "${SNIPASTE_CONFIG_DIR}"
+fi
+if [ ! -d "${SNIPASTE_CONFIG_DIR}" ]; then
+    mkdir -p "${SNIPASTE_CONFIG_DIR}"
+fi
+
+cd "${SNIPASTE_CONFIG_DIR}"
+for i in "${SNIPASTE_INSTALL_DIR}"/*; do
+    if [ -L "$(basename "${i}")" ]; then
+        if [ "x$(realpath -q "$(basename "${i}")")" = "x${i}" ]; then
+            true
+        else
+            echo "symlink broken, fixing..."
+            rm -f "$(basename "${i}")"
+            ln -s "${i}" .
+        fi
+    else
+        echo "creating missing symlink..."
+        ln -s "${i}" .
+    fi
+done
+
+exec wine Snipaste.exe

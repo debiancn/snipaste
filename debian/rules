@@ -21,6 +21,3 @@ override_dh_auto_install:
 override_dh_shlibdeps:
 
 override_dh_strip:
-
-override_dh_fixperms:
-	dh_fixperms -Xconfig.ini # workaround to allow everyone to write config

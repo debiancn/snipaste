@@ -9,4 +9,4 @@ GenericName=Powerful snipping and pasting tool
 GenericName[zh_CN]=强大的截图与贴图工具
 Encoding=UTF-8
 Icon=/opt/snipaste/snipaste.png
-Exec=wine /opt/snipaste/Snipaste.exe
+Exec=/usr/bin/snipaste
