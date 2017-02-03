@@ -1,0 +1,22 @@
+Source: snipaste
+Section: utils
+Priority: optional
+Maintainer: Boyuan Yang <073plan@gmail.com>
+Build-Depends:
+ debhelper (>= 9),
+Standards-Version: 3.9.8
+Homepage: https://snipaste.com
+Vcs-Git: https://github.com/debiancn/snipaste
+Vcs-Browser: https://github.com/debiancn/snipaste
+
+Package: snipaste
+Architecture: amd64
+Depends:
+ wine64 (>= 1.8~) | wine64-development (>= 1.8~) | wine64-staging (>= 2.0~),
+ ${misc:Depends},
+Description: Image snipping and pasting tool
+ Snipaste is a simple but powerful snipping tool,
+ and also allows you to pin the screenshot back onto
+ the screen. 
+ .
+ Snipaste is mainly written in Qt5.

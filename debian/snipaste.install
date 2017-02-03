@@ -1,0 +1,3 @@
+snipaste /opt/
+debian/snipaste.desktop /usr/share/applications/
+debian/snipaste.png /opt/snipaste/

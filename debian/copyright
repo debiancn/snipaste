@@ -1,0 +1,10 @@
+Format: Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: telegram-desktop
+Source: https://tdesktop.com
+
+Files: *
+Copyright: 2014-2017 snipaste.app@gmail.com. All Rights Reserved.
+License: proprietory
+
+License: proprietory
+ All Rights Reserved.
