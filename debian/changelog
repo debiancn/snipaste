@@ -1,3 +1,11 @@
+snipaste (1.11.3~0debiancn1) unstable; urgency=medium
+
+  * Use a wrapper for snipaste to save per-user config.
+    + config.ini is stored under $XDG_CONFIG_HOME/snipaste/.
+  * Set dependency on both wine and wine64.
+
+ -- Boyuan Yang <073plan@gmail.com>  Fri, 03 Feb 2017 22:07:41 +0800
+
 snipaste (1.11.3~0debiancn0) unstable; urgency=medium
 
   * New upstream release 1.11.3 (Wine version)
