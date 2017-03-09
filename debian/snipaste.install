@@ -1,4 +1,4 @@
 snipaste /opt/
 debian/snipaste.desktop /usr/share/applications/
-debian/snipaste.png /opt/snipaste/
+debian/snipaste.svg /opt/snipaste/
 debian/wrapper/snipaste /usr/bin/

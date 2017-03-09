@@ -8,5 +8,5 @@ Name=Snipaste
 GenericName=Powerful snipping and pasting tool
 GenericName[zh_CN]=强大的截图与贴图工具
 Encoding=UTF-8
-Icon=/opt/snipaste/snipaste.png
+Icon=/opt/snipaste/snipaste.svg
 Exec=/usr/bin/snipaste

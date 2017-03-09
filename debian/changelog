@@ -1,3 +1,10 @@
+snipaste (1.12~0debiancn1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add svg snipaste icon.
+
+ -- Boyuan Yang <073plan@gmail.com>  Thu, 09 Mar 2017 23:30:41 +0800
+
 snipaste (1.11.3~0debiancn1) unstable; urgency=medium
 
   * Use a wrapper for snipaste to save per-user config.
