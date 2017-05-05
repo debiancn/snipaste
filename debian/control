@@ -12,8 +12,8 @@ Vcs-Browser: https://github.com/debiancn/snipaste
 Package: snipaste
 Architecture: amd64
 Depends:
- wine (>= 1.8~) | wine-development (>= 1.8~) | wine-staging (>= 2.0~),
- wine64 (>= 1.8~) | wine64-development (>= 1.8~) | wine64-staging (>= 2.0~),
+ wine (>= 2.0~) | wine-development (>= 2.0~) | wine-staging (>= 2.0~),
+ wine64 (>= 2.0~) | wine64-development (>= 2.0~) | wine64-staging (>= 2.0~),
  ${misc:Depends},
 Description: Image snipping and pasting tool
  Snipaste is a simple but powerful snipping tool,
