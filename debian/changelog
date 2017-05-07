@@ -1,3 +1,9 @@
+snipaste (1.13.1~0debiancn0) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 07 May 2017 17:39:21 +0800
+
 snipaste (1.13~0debiancn1) unstable; urgency=medium
 
   * New upstream release.
